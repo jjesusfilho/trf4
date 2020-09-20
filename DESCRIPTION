@@ -13,7 +13,7 @@ Encoding: UTF-8
 Language: pt_BR
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Suggests: 
     roxygen2
 Imports: 

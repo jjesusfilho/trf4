@@ -1,2 +1,9 @@
 ^trf4\.Rproj$
 ^\.Rproj\.user$
+^\.github$
+^README\.Rmd$
+^LICENSE\.md$
+^data-raw$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
