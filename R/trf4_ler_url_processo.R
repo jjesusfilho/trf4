@@ -24,8 +24,7 @@ trf4_ler_url_processo <- function(arquivos = NULL, diretorio = "."){
 
     x <- xml2::read_html(.x)
 
-    url <- x %>%
-      xml2::xml_find_first("//td[b='Processo:']/following-sibling::td/a") %>%
+    url <- x %>% xml2::xml_find_first("//td[contains(b,'Processo:')]/a") %>%
       xml2::xml_attr("href")
 
     tibble::tibble(id = id, processo_url = url)
