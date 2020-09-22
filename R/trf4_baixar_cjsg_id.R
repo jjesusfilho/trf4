@@ -16,7 +16,7 @@ trf4_baixar_cjsg_id <- function(id = NULL, diretorio = "."){
 
     pb$tick()
 
-    if (str_detect(.x,"TRF4",negate=TRUE)){
+    if (stringr::str_detect(.x,"TRF4",negate=TRUE)){
 
       .x <- .x %>%
         stringr::str_pad(8,"left","0") %>%
