@@ -22,7 +22,7 @@ trf4_ler_dados_cposg <- function(arquivos = NULL, diretorio = "."){
 
     id <- stringr::str_extract(.x,"TRF4\\d+")
 
-    x <- xml2::read_html("data-raw/a.html")
+    x <- xml2::read_html(.x)
 
     classe <- x %>%
       xml2::xml_find_all("//div[@id='spnCabecalho']//following-sibling::strong[1]") %>%
