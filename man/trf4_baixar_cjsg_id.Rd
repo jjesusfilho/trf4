@@ -7,7 +7,7 @@
 trf4_baixar_cjsg_id(id = NULL, diretorio = ".")
 }
 \arguments{
-\item{id}{Id do processo}
+\item{id}{Id do processo. Pode ser o id completo ou o número.}
 
 \item{diretorio}{Diretório}
 }
