@@ -28,6 +28,7 @@ Imports:
     httr,
     xml2,
     tibble,
-    progress
+    progress,
+    janitor
 URL: https://github.com/jjesusfilho/trf4
 BugReports: https://github.com/jjesusfilho/trf4/issues
