@@ -20,7 +20,7 @@ trf4_ler_docs_html <- function (arquivos = NULL, diretorio = ".")
     id <- stringr::str_extract(.x, "TRF4\\d+")
 
     x <- .x %>%
-      xml2::read_html()
+      xml2::read_html(encoding="latin1")
 
 
 

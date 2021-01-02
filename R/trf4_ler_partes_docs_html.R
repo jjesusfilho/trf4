@@ -22,7 +22,7 @@ trf4_ler_partes_docs_html <- function (arquivos = NULL, diretorio = ".")
     id <- stringr::str_extract(.x, "TRF4\\d+")
 
     x <- .x %>%
-      xml2::read_html()
+      xml2::read_html(encoding = 'latin1')
 
     var <- x %>%
       xml2::xml_find_all("//section[@data-nome='partes']//span[@class='tipo_parte'] |//td[@width='22%']/div[@class='parte']") %>%
